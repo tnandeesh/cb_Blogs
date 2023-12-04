@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console-to-Code Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .code-section {
+            background-color: #f7f7f7;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Getting Started with Console-to-Code</h1>
+
+    <p>The console provides a guided path for creating resources and testing prototypes. If you want to create the same resources at scale, you’ll need automation code. Console-to-Code is a feature of the Amazon EC2 console that can help you get started with your automation code. Console-to-Code records your console actions, including default values and compatible parameters. It then uses generative AI to suggest code in your preferred infrastructure-as code (IaC) format for the actions you want. You can use the code as a starting point, customizing it to make it production-ready for your specific use case.
+
+        There is no additional cost for using Console-to-Code.
+        </p>
+
+    <h2>How it Works</h2>
+
+    <p>
+        Console-to-Code records your console actions and provides you with code snippets in various formats. Follow these steps to use Console-to-Code:
+    </p>
+
+    <ol>
+        <li>You perform actions in the console, such as launching an instance or enabling detailed monitoring.</li>
+        <li>Console-to-Code records all your actions, including all the default settings and compatible parameters that the console provides.</li>
+        <li>You choose the actions that you want to use in your automation scripts. These can be mutating or read-only (non-mutating) actions, or both types of actions.</li>
+        <li>Console-to-Code generates code in your desired infrastructure-as-code (IaC) format, for example, TypeScript.</li>
+        <li>You copy the code to use in your code development tool or download it to share.</li>
+        <li>You then use the code as a starting point for your automation scripts. You'll need to validate that the code meets your intent and that the parameters will configure your resources as expected. You'll need to customize the code to make it production-ready for your use case. Once you're satisfied with the code, you can use it in your automation scripts.</li>
+    <p>
+        For the instructions on how to use Console-to-Code in the Amazon EC2 console, see Use <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/console-to-code.html" target="_blank" title="Go to Console-to-Code.">Console-to-Code.</a>
+    </p>
+ </ol>
+ <img src="consoletocode.png" alt="consoletocode.png" width="1000" height="500">
+
+ <h1> Limitations</h1>
+ <li>The following limitations apply when using Console-to-Code.</li>
+
+ <div class="limitations-section">
+     <h2>Supported Regions</h2>
+     <p>Currently, Console-to-Code is only available in the US East (N. Virginia) Region.</p>
+ </div>
+
+ <div class="limitations-section">
+     <h2>Supported Code Formats</h2>
+     <p>Console-to-Code can currently generate infrastructure-as-code (IaC) in the following code formats:</p>
+     <ul class="code-formats-list">
+         <li>CDK Java</li>
+         <li>CDK Python</li>
+         <li>CDK TypeScript</li>
+         <li>CloudFormation JSON</li>
+         <li>CloudFormation YAML</li>
+     </ul>
+     <body>
+
+        <h1>Use Console-to-Code</h1>
+    
+        <h2>To generate code using Console-to-Code</h2>
+    
+        <ol>
+            <li>Open the Amazon EC2 console at <a href="https://console.aws.amazon.com/ec2/" target="_blank">https://console.aws.amazon.com/ec2/</a>.</li>
+            <li>Use the console to create resources and test prototypes. For example, use the console to configure and launch instances and enable detailed monitoring.</li>
+            <ul class="code-formats-list">
+                <li>Console-to-Code records every action that you perform.</li>
+            </ul>
+            <li>In the left navigation pane, choose Console-to-Code.</li>
+            <li>In the Recorded actions table, review your actions that were recorded, and decide which actions to include for code generation.</li>
+            <ul class="code-formats-list">
+                <li>Use the search field to filter the tab6ttle by a specific console page or action. As you start to type, the table is filtered.</li>
+            </ul>
+            <ul class="code-formats-list">
+                <li>Use the Type drop-down to filter by all actions, mutating actions, or read-only actions.
+                    <br/><strong>Note:</strong> Only actions taken during the current session are listed. Actions taken during previous sessions are not retained.</li>
+            </ul>
+            
+            <li>Select the checkbox next to each action for which you require code to be generated.<br/><strong>Note:</strong> Up to 5 actions can be selected at one time.</li>
+            <li>Choose the <button class="code-format-button">Generate {code} code</button> button. The button label defaults to the last-selected code format. To select a different code format, choose the arrow next to the button.</li>
+            <li>Under Review code, choose Copy to copy the code to use in your development tool or Download to download the file for sharing.</li>
+            <li>Use the code as a starting point for your infrastructure-as-code. You'll need to customize the code to make it production-ready for your specific use case.<br/><strong>Note:</strong> If you find that the code is not production-ready, please provide us with feedback on how it can be improved (see the following step 9). AWS Support can’t assist you with the generated code or your customized code development.</li>
+            <li>(Optional) Choose the thumbs-up or thumbs-down to let us know if Console-to-Code helped. If you choose the thumbs-down, you can then choose Provide feedback to tell us how we can improve the code to better help you.</li>
+        </ol>
+    
+        <div class="instructions-section">
+            <p>
+                For detailed instructions on how to use Console-to-Code in the Amazon EC2 console, please visit
+                <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/console-to-code.html" target="_blank">Use Console-to-Code</a>.
+            </p>
+        </div>
+    
+    </body>
+    

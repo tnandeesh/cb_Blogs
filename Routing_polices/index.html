@@ -91,7 +91,7 @@
             <p>Multivalue answer routing lets you configure Amazon Route 53 to return multiple values, such as IP addresses for your web servers, in response to DNS queries. You can use multivalue answer routing policy for records in a private hosted zone.</p>
             <p>Note the following:</p>
             <ul>
-                <p>• If you associate a health check with a multivalue answer record, Route 53 responds to DNS queries with the corresponding IP address only when the health check is healthy.</li>
+                <p>• If you associate a health check with a multivalue answer record, Route 53 responds to DNS queries with the corresponding IP address only when the health check is healthy.</p>
                 <p>• If you don't associate a health check with a multivalue answer record, Route 53 always considers the record to be healthy.</p>
                 <p>• If you have eight or fewer healthy records, Route 53 responds to all DNS queries with all the healthy records.</p>
                 <p>• When all records are unhealthy, Route 53 responds to DNS queries with up to eight unhealthy records.</p>
@@ -102,6 +102,6 @@
             <p>To configure weighted routing, you create records that have the same name and type for each of your resources. You assign each record a relative weight that corresponds with how much traffic you want to send to each resource. Amazon Route 53 sends traffic to a resource based on the weight that you assign to the record as a proportion of the total weight for all records in the group.</p>
         </li>
     </ol>
-    <img src="route53.png" alt="route53.png" width="300" height="80"
+    <img> src="route53.png" alt="route53.png" width="300" height="80"
 </body>
 </html>

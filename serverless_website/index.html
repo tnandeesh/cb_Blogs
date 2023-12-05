@@ -81,24 +81,24 @@
         <ol>
                 <h3>1. Create an S3 Bucket:</h3>
                 <p>Set up an S3 bucket to store your website assets such as images, HTML, and CSS files.</p>
-            </li>
+            
                 <h3>2. Create a Lambda Function:</h3>
                 <p>Develop a Lambda function to handle dynamic functionality on your serverless website.</p>
-            </li>
+            
                 <h3>3. Integrate with API Gateway:</h3>
                 <p>Connect your Lambda function to API Gateway to manage incoming requests and enable communication
                     between clients and your serverless backend.</p>
-            </li>
+           
         </ol>
 
         <h2>Step 3: Access an Image from the S3 Bucket</h2>
         <ol>
                 <h3>1. Update Lambda Function:</h3>
                 <p>Modify your Lambda function code to access an image stored in the S3 bucket.</p>
-            </li>
+            
                 <h3>2. Test Lambda Function:</h3>
                 <p>Verify that your Lambda function can successfully retrieve the image from the S3 bucket.</p>
-            </li>
+            
         </ol>
 
         <h2>Step 4: Create a CloudFront Distribution</h2>
@@ -106,15 +106,15 @@
                 <h3>1. Set Up a CloudFront Distribution:</h3>
                 <p>Establish a CloudFront distribution to act as a content delivery network (CDN) for your website,
                     improving performance and reducing latency.</p>
-            </li>
+           
                 <h3>2. Configure CloudFront with S3 Origin:</h3>
                 <p>Connect your CloudFront distribution to the S3 bucket, ensuring it serves as the origin for your
                     website content.</p>
-            </li>
+           
                 <h3>3. Test Your CloudFront Distribution:</h3>
                 <p>Access your website through the CloudFront URL and monitor metrics to ensure efficient content
                     delivery.</p>
-            </li>
+           
         </ol>
 
         <h2>Step 5: Prevent Direct Access to S3</h2>
@@ -122,10 +122,10 @@
                 <h3>1. Update S3 Bucket Policy:</h3>
                 <p>Enhance security by configuring your S3 bucket policy to allow access only through your CloudFront
                     distribution.</p>
-            </li>
+           
                 <h3>2. Invalidate CloudFront Cache:</h3>
                 <p>Invalidate the CloudFront cache to ensure it fetches the latest content from the S3 bucket.</p>
-            </li>
+            
         </ol>
 
         <h2>Step 6: Access the Image via CloudFront</h2>
@@ -133,11 +133,11 @@
                 <h3>1. Test Access Control:</h3>
                 <p>Confirm that direct access to the S3 URL is denied, and images can only be accessed through the
                     CloudFront distribution.</p>
-            </li>
+            
                 <h3>2. Ensure Seamless Access:</h3>
                 <p>Verify that accessing images via the CloudFront distribution remains seamless, providing an
                     optimized user experience.</p>
-            </li>
+           
         </ol>
 
     </main>

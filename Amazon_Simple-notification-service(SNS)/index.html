@@ -39,9 +39,8 @@
 
         h2 {
             color: #050505;
-            border-bottom: 2px solid #050505;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            border-bottom: 2px ;
+
         }
 
         p {
@@ -79,6 +78,7 @@
         <h1>Amazon Simple Notification Service(SNS)</h1>
     </header>
     <div class="container">
+        
     <main>
         <p>In a world where connectivity and real-time communication are paramount, a robust and efficient messaging service is crucial for businesses looking to engage and connect with their audience seamlessly. Amazon Simple Notification Service (SNS) emerges as a game-changer, providing a scalable and reliable solution for sending messages, notifications, and alerts across various platforms. In this blog, we will explore the capabilities of Amazon SNS and how it can be harnessed to supercharge your social media strategy on the Amazon Web Services (AWS) platform.</p>
         <header><img src="SNS.png" alt="SNS.png" width="600" height="350"></header>
@@ -97,22 +97,21 @@
         </ul>
 
             <h1>Creating an Amazon SNS Topic - Step-by-Step Guide</h1>
-     
-    
+      
         <main>
-            <h2>Step 1: Access the AWS Management Console</h2>
+            <h3>Step 1: Access the AWS Management Console</h3>
             <p>Go to the AWS Management Console and sign in to your AWS account.</p>
     
-            <h2>Step 2: Navigate to the SNS Service</h2>
+            <h3>Step 2: Navigate to the SNS Service</h3>
             <p>In the AWS Management Console, search for "SNS" in the Find Services search bar, or navigate to the "Services" dropdown and select "Simple Notification Service" under the "Application Integration" section.</p>
     
-            <h2>Step 3: Create a New Topic</h2>
+            <h3>Step 3: Create a New Topic</h3>
             <ol>
                 <li>In the SNS dashboard, click on the "Topics" section in the left navigation pane.</li>
                 <li>Click the "Create topic" button.</li>
             </ol>
     
-            <h2>Step 4: Configure Topic Details</h2>
+            <h3>Step 4: Configure Topic Details</h3>
             <p><strong>Name and Display Name:</strong></p>
             <ul>
                 <li>Enter a meaningful name for your topic in the "Name" field.</li>
@@ -124,26 +123,27 @@
                 <li>Click "Create topic" to proceed.</li>
             </ul>
     
-            <h2>Step 5: Obtain ARN (Amazon Resource Name)</h2>
+            <h3>Step 5: Obtain ARN (Amazon Resource Name)</h3>
             <p>After creating the topic, you'll see details about the new topic, including its Amazon Resource Name (ARN). The ARN uniquely identifies your SNS topic and is required when subscribing other AWS resources to it.</p>
     
-            <h2>Step 6: Create Subscriptions (Optional)</h2>
+            <h3>Step 6: Create Subscriptions (Optional)</h3>
             <ol>
                 <li>Click on the "Create subscription" button.</li>
                 <li>Select the protocol you want to use (e.g., Email, SMS, Lambda).</li>
                 <li>Enter the necessary details based on the chosen protocol.</li>
             </ol>
     
-            <h2>Step 7: Confirm Subscriptions (For Some Protocols)</h2>
+            <h3>Step 7: Confirm Subscriptions (For Some Protocols)</h3>
             <p>For certain protocols like email, you may need to confirm the subscription by clicking a confirmation link sent to your email.</p>
     
-            <h2>Step 8: Publish a Test Message (Optional)</h2>
+            <h3>Step 8: Publish a Test Message (Optional)</h3>
             <ol>
                 <li>In the topic details page, click "Publish message."</li>
                 <li>Enter a subject and message.</li>
                 <li>Click "Publish message."</li>
             </ol>
         </main>
+
         <h2>Benefits of Leveraging Amazon SNS for Social Media:</h2>
 
         <ul>
